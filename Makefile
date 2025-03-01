@@ -1,4 +1,4 @@
-CC = gcc
+CC = clang
 CFLAGS = -Wall -Wextra -pedantic -std=c11
 LIBS =
 SRC = $(wildcard src/*.c)

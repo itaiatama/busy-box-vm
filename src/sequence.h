@@ -11,6 +11,6 @@ typedef struct {
 // Executes operation sequence (each with return code == OK) and 
 // return latest operation execution return code
 // or empty input return code
-ReturnCode bbox_execute_sequence(Sequence* sequence);
+ReturnCode bbox_execute_sequence(Vm* vm, Sequence* sequence);
 
 #endif //BBOX_SEQUENCE_H
