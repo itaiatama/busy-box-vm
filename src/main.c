@@ -4,7 +4,19 @@
 #include "return_code.h"
 #include "sequence.h"
 
-int main(void) {
+const char* shift(int* argc, const char** argv[]) {
+    assert(*argc > 0 && "Not enogth arguments");
+
+    const char *arg = **argv;
+    (*argv)++;
+    (*argc)--;
+    return arg;  
+}
+
+int main(int argc, const char* argv[]) {
+
+    // Skipping executable name (also use 'argc' and 'argv')
+    shift(&argc, &argv);
 
     Vm vm = { 0 };
 

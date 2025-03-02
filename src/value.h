@@ -23,8 +23,10 @@ typedef struct {
     ValueData data;
 } Value;
 
+// Function to dump value into stdout (with type description)
 void bbox_value_dump(Value* value);
 
+// Function to sum (add) two values
 ReturnCode bbox_value_add(Value* a, Value* b, Value* out);
 
 #endif //BBOX_VALUE_H
